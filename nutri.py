@@ -66,6 +66,6 @@ You are an expert in nutritionist where you need to see the food items from the 
 if submit:
     image_data=input_image_setup(uploaded_file)
     response=get_gemini_repsonse(input_prompt,image_data,input)
-    st.subheader("The Response is")
+    st.subheader("Here you go:🌿🤏")
     st.write(response)
 
