@@ -3,9 +3,22 @@ NutriScan: "Revitalize your wellness, one bite at a time with NutriScan!". Power
 
 # Live Link: 
 https://aman-nutriscan.streamlit.app/
+# Video:
+
+![video](https://drive.google.com/file/d/1rdKY-iXD4irtil4cULuBAHLmK8bKZnIV/view)
 
 # Blog link : 
 https://medium.com/@amaninvinsible/nutriscan-your-pocket-sized-nutritionist-d6a7c91b6ecf
+
+# Introduction
+In the age of information overload, it’s more important than ever to have tools that simplify healthy choices. Enter NutriScan🥗, a revolutionary app that puts a personal nutritionist✨ right in your pocket. Powered by Google’s Gemini Pro Vision AI, it takes the guesswork out of meal planning and calorie tracking, making it easier than ever to achieve your wellness goals✨.
+
+The NutriScan app🥗 is designed to help users analyze🔍 the nutritional content📄 of their meals by leveraging advanced image recognition technology with the help of Generative AI💡. Users can upload an image🖼️of their food, and the app will provide details about each item along with the total calorie count💪✨. The app utilizes Google’s Gemini Pro Vision API for content generation and Streamlit for building the user interface.
+
+
+# NutriScan App Interface
+A Glimpse into the Tech Behind the Scenes
+NutriScan🥗 leverages the cutting-edge Google Gemini Pro Vision API to analyze food items from images🖼️, calculate total calories, and deliver detailed information about each item’s caloric intake. Let’s delve into the technology stack that powers this intelligent nutrition app✨.
 
 # Glimpse of NutriScan🖼️:
 Check out these screenshots to get a glimpse of NutriScan in action:
@@ -25,87 +38,6 @@ Ask your questions and give the image as input for analyzing your meal.
 
 The Nutritionist Response by NutriScan
 
-# Introduction
-In the age of information overload, it’s more important than ever to have tools that simplify healthy choices. Enter NutriScan🥗, a revolutionary app that puts a personal nutritionist✨ right in your pocket. Powered by Google’s Gemini Pro Vision AI, it takes the guesswork out of meal planning and calorie tracking, making it easier than ever to achieve your wellness goals✨.
-
-The NutriScan app🥗 is designed to help users analyze🔍 the nutritional content📄 of their meals by leveraging advanced image recognition technology with the help of Generative AI💡. Users can upload an image🖼️of their food, and the app will provide details about each item along with the total calorie count💪✨. The app utilizes Google’s Gemini Pro Vision API for content generation and Streamlit for building the user interface.
-
-
-# NutriScan App Interface
-A Glimpse into the Tech Behind the Scenes
-NutriScan🥗 leverages the cutting-edge Google Gemini Pro Vision API to analyze food items from images🖼️, calculate total calories, and deliver detailed information about each item’s caloric intake. Let’s delve into the technology stack that powers this intelligent nutrition app✨.
-
-# Unveiling the Technology Behind NutriScan :
-At the heart of NutriScan lies a sophisticated technology stack that seamlessly integrates AI capabilities ✨with nutrition expertise. Let’s take a closer look at the underlying technologies that power NutriScan’s intelligent nutrition management.
-
-1. Setting Up the Environment:
-Our NutriScan app kicks off by establishing a robust environment. The .env file stores sensitive information like API keys, ensuring secure access to external services. Utilizing the dotenv library, we load these variables for seamless integration. The app is built using Streamlit, a powerful Python library💪 for creating web applications. Additionally, we leverage the Google Generative AI library and the ever-reliable Pillow library (PIL) for image processing.
-
-
-2. Connecting to Google’s Gemini Pro Vision API:
-The heartbeat of NutriScan lies in its ability to interpret images and generate insightful content. The get_gemini_response function orchestrates this connection with the Google Gemini Pro Vision API. It takes inputs such as the user query, uploaded image, and a prompt. The API✨ then processes this information and responds, unraveling the nutritional details of the food items in the image🖼️.
-
-Two main functions handle the interaction with the Gemini Pro Vision API:
-
-(i). get_gemini_response: This function takes an input, an image, and a prompt. It uses the Gemini Pro Vision model to generate content based on these inputs and returns the API response.
-
-
-def get_gemini_response(input, image, prompt):
-    model = genai.GenerativeModel('gemini-pro-vision')
-    response = model.generate_content([input, image[0], prompt])
-    return response.text
-
-    
-(ii). input_image_setup: This function prepares the uploaded image for processing. It checks if a file has been uploaded, reads the file into bytes, and returns the image data🖼️📄 in the required format.
-
-def input_image_setup(uploaded_file):
-    if uploaded_file is not None:
-        bytes_data = uploaded_file.getvalue()
-        image_parts = [
-            {
-                "mime_type": uploaded_file.type,
-                "data": bytes_data
-            }
-        ]
-        return image_parts
-    else:
-        raise FileNotFoundError("No file uploaded")
-        
-3. Streamlit App Initialization:
-Upon launching the app, users are greeted with an inviting interface. The Streamlit app is configured with a title, header, and an interactive text input field prompting users to share additional details about the uploaded image✨. The file uploader feature allows users to seamlessly upload an image of their meal, while the app dynamically displays the uploaded image.
-
-
-st.set_page_config(page_title="NutriScan App")
-
-st.header("NutriScan 🥗")
-st.write("Revitalize Your Wellness, One Bite at a Time with NutriScan!😋")
-input = st.text_input("Let me Check : ", key="input")
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
-image = ""   
-if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image.", use_column_width=True)
-    
-4. Engaging with NutriScan:
-Users can actively participate in their nutrition journey by providing additional details in the text input field. Upon clicking the “Tell me the total calories” button, the app processes both the uploaded image🖼️ and user input. The intricate dance between the input_image_setup function and the get_gemini_response function transforms this information into a detailed nutritional analysis.
-
-submit = st.button("Tell me the total calories")
-input_prompt = """
-You are an expert in nutritionist where you need to see the food items from the image
-               and calculate the total calories, also provide the details of every food items with calories intake
-               in below format:
-
-               1. Item 1 - no of calories   
-               2. Item 2 - no of calories
-               ----
-               ----
-"""
-if submit:
-    image_data = input_image_setup(uploaded_file)
-    response = get_gemini_response(input_prompt, image_data, input)
-    st.subheader("The Response is")
-    st.write(response)
-    
     
 # NutriScan in Action:
 User-Friendly Interface: NutriScan boasts an intuitive interface, allowing users to effortlessly input their queries and upload images🖼️ for analysis.
