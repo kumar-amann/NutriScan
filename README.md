@@ -12,13 +12,16 @@ Check out these screenshots to get a glimpse of NutriScan in action:
 
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/3b0c32cc-af01-46e5-84e0-f2e8fcd77c2f)
 
+
 NutriScan App landing page interface
 
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/479d56a7-9d89-408c-a7b8-295d67785677)
 
+
 Ask your questions and give the image as input for analyzing your meal.
 
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/da12970e-44be-4595-afae-1025078ba7ec)
+
 
 The Nutritionist Response by NutriScan
 
@@ -26,10 +29,6 @@ The Nutritionist Response by NutriScan
 In the age of information overload, it’s more important than ever to have tools that simplify healthy choices. Enter NutriScan🥗, a revolutionary app that puts a personal nutritionist✨ right in your pocket. Powered by Google’s Gemini Pro Vision AI, it takes the guesswork out of meal planning and calorie tracking, making it easier than ever to achieve your wellness goals✨.
 
 The NutriScan app🥗 is designed to help users analyze🔍 the nutritional content📄 of their meals by leveraging advanced image recognition technology with the help of Generative AI💡. Users can upload an image🖼️of their food, and the app will provide details about each item along with the total calorie count💪✨. The app utilizes Google’s Gemini Pro Vision API for content generation and Streamlit for building the user interface.
-
-
-# Explore the Live Project:
-You can access the live version of the NutriScan app💪 by visiting the following URL: 🔗 NutriScanAppLiveProjectLink
 
 
 # NutriScan App Interface
