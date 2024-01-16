@@ -4,14 +4,20 @@ NutriScan: "Revitalize your wellness, one bite at a time with NutriScan!". Power
 # Live Link: 
 https://aman-nutriscan.streamlit.app/
 
+# Blog link : 
+https://medium.com/@amaninvinsible/nutriscan-your-pocket-sized-nutritionist-d6a7c91b6ecf
+
 # Glimpse of NutriScan🖼️:
 Check out these screenshots to get a glimpse of NutriScan in action:
+
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/3b0c32cc-af01-46e5-84e0-f2e8fcd77c2f)
+
 NutriScan App landing page interface
 
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/479d56a7-9d89-408c-a7b8-295d67785677)
 
 Ask your questions and give the image as input for analyzing your meal.
+
 ![image](https://github.com/kumar-amann/NutriScan/assets/137410641/da12970e-44be-4595-afae-1025078ba7ec)
 
 The Nutritionist Response by NutriScan
@@ -21,12 +27,6 @@ In the age of information overload, it’s more important than ever to have tool
 
 The NutriScan app🥗 is designed to help users analyze🔍 the nutritional content📄 of their meals by leveraging advanced image recognition technology with the help of Generative AI💡. Users can upload an image🖼️of their food, and the app will provide details about each item along with the total calorie count💪✨. The app utilizes Google’s Gemini Pro Vision API for content generation and Streamlit for building the user interface.
 
-![image](https://github.com/kumar-amann/NutriScan/assets/137410641/2817b6e0-d77e-494e-a942-ca72506d8da5)
-
-
-
-“Let food be thy medicine, and medicine be thy food.” — Hippocrates
-“What we eat should not simply fill the stomach; it should nourish the soul.” — — ✨G.K. Chesterton✨
 
 # Explore the Live Project:
 You can access the live version of the NutriScan app💪 by visiting the following URL: 🔗 NutriScanAppLiveProjectLink
@@ -42,13 +42,6 @@ At the heart of NutriScan lies a sophisticated technology stack that seamlessly 
 1. Setting Up the Environment:
 Our NutriScan app kicks off by establishing a robust environment. The .env file stores sensitive information like API keys, ensuring secure access to external services. Utilizing the dotenv library, we load these variables for seamless integration. The app is built using Streamlit, a powerful Python library💪 for creating web applications. Additionally, we leverage the Google Generative AI library and the ever-reliable Pillow library (PIL) for image processing.
 
-from dotenv import load_dotenv
-load_dotenv() 
-import streamlit as st
-import os
-import google.generativeai as genai
-from PIL import Image
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 2. Connecting to Google’s Gemini Pro Vision API:
 The heartbeat of NutriScan lies in its ability to interpret images and generate insightful content. The get_gemini_response function orchestrates this connection with the Google Gemini Pro Vision API. It takes inputs such as the user query, uploaded image, and a prompt. The API✨ then processes this information and responds, unraveling the nutritional details of the food items in the image🖼️.
@@ -62,6 +55,8 @@ def get_gemini_response(input, image, prompt):
     model = genai.GenerativeModel('gemini-pro-vision')
     response = model.generate_content([input, image[0], prompt])
     return response.text
+
+    
 (ii). input_image_setup: This function prepares the uploaded image for processing. It checks if a file has been uploaded, reads the file into bytes, and returns the image data🖼️📄 in the required format.
 
 def input_image_setup(uploaded_file):
