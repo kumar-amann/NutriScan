@@ -68,8 +68,7 @@ The Python Imaging Library (PIL) is utilized for handling image-related operatio
 3) Informed Food Choices: With NutriScan, you gain a deeper understanding of your food choices. The detailed breakdown allows you to identify high-calorie items, balance your meals, and work towards your health and wellness goals💪.
 
 # Challenges Faced During Development:
-          The development journey of NutriScan was marked by various challenges, each serving as a stepping stone towards creating a robust and user-friendly nutrition management app. Here’s a glimpse into the 
-          hurdles we faced and conquered📑:
+The development journey of NutriScan was marked by various challenges, each serving as a stepping stone towards creating a robust and user-friendly nutrition management app. Here’s a glimpse into the hurdles we faced and conquered📑:
 
 1) Integration of Google Gemini Pro Vision API:
 
