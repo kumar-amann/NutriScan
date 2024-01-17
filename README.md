@@ -1,11 +1,16 @@
 # NutriScan🥗
 NutriScan: "Revitalize your wellness, one bite at a time with NutriScan!". Powered by the Gemini Pro-Vision API and built on Streamlit, transforms nutrition tracking. Easily obtain calorie values by inputting images, making your fitness goals more achievable. NutriScan acts as your personal nutritionist bot, seamlessly integrated and user-friendly.Take charge of your health and enjoy informed nutritional decisions with NutriScan.
 
-# Live Link: 
+# Live Link : 
 https://aman-nutriscan.streamlit.app/
 
 # Blog link : 
 https://medium.com/@amaninvinsible/nutriscan-your-pocket-sized-nutritionist-d6a7c91b6ecf
+
+# Demo Video :
+
+https://github.com/kumar-amann/NutriScan/assets/137410641/ad5cc978-7035-4b65-8b63-095c7ca5b8d0
+
 
 # Introduction
 In the age of information overload, it’s more important than ever to have tools that simplify healthy choices. Enter NutriScan🥗, a revolutionary app that puts a personal nutritionist✨ right in your pocket. Powered by Google’s Gemini Pro Vision AI, it takes the guesswork out of meal planning and calorie tracking, making it easier than ever to achieve your wellness goals✨.
@@ -38,10 +43,10 @@ The Nutritionist Response by NutriScan
     
 # NutriScan in Action:
 
-User-Friendly Interface: NutriScan boasts an intuitive interface, allowing users to effortlessly input their queries and upload images🖼️ for analysis.
-AI-Powered Analysis: Behind the scenes, NutriScan employs the Google Gemini Pro Vision API,✨ a generative AI model, to analyze food items and provide accurate details on caloric content.
-Detailed Caloric Information: Upon submitting a request, NutriScan delivers a detailed breakdown of each food item’s caloric intake✨, following the specified format.
-Technologies Used in NutriScan App
+- User-Friendly Interface: NutriScan boasts an intuitive interface, allowing users to effortlessly input their queries and upload images🖼️ for analysis.
+  AI-Powered Analysis: Behind the scenes, NutriScan employs the Google Gemini Pro Vision API,✨ a generative AI model, to analyze food items and provide accurate details on caloric content.
+  Detailed Caloric Information: Upon submitting a request, NutriScan delivers a detailed breakdown of each food item’s caloric intake✨, following the specified format.
+  Technologies Used in NutriScan App
 1) Python 🐍
 Python serves as the backbone of NutriScan, providing a versatile and powerful programming language for implementing the app’s core functionality. Its readability and extensive libraries make it an ideal choice for handling complex tasks seamlessly.
 
@@ -63,7 +68,8 @@ The Python Imaging Library (PIL) is utilized for handling image-related operatio
 3) Informed Food Choices: With NutriScan, you gain a deeper understanding of your food choices. The detailed breakdown allows you to identify high-calorie items, balance your meals, and work towards your health and wellness goals💪.
 
 # Challenges Faced During Development:
-The development journey of NutriScan was marked by various challenges, each serving as a stepping stone towards creating a robust and user-friendly nutrition management app. Here’s a glimpse into the hurdles we faced and conquered📑:
+          The development journey of NutriScan was marked by various challenges, each serving as a stepping stone towards creating a robust and user-friendly nutrition management app. Here’s a glimpse into the 
+          hurdles we faced and conquered📑:
 
 1) Integration of Google Gemini Pro Vision API:
 
